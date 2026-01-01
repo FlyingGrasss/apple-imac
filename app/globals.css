@@ -49,6 +49,7 @@ html {
   width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 body {
@@ -57,6 +58,8 @@ body {
   background-color: #000;
   color: var(--color-dark-100);
   font-family: var(--font-semibold);
+  scrollbar-width: none;
+
 }
 
 @utility flex-center {
@@ -267,10 +270,10 @@ body {
     }
 
     .content {
-      @apply mx-auto max-w-xl mt-24;
+      @apply mx-auto max-w-[690px] mt-24;
 
       p {
-        @apply lg:h3-semibold base-semibold text-center translate-y-10 opacity-0 px-5;
+        @apply lg:h3-semibold base-semibold text-center translate-y-10 px-5;
       }
     }
   }
